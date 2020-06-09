@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap");
+@import "./responsive.css";
+
+/* variables */
+:root {
+  --main: #5a4df2;
+  --primary: #ffc636;
+  --secondary: #0a0b5b;
+}
+
+html,
+body {
+  font-size: 10px;
+  font-family: "Tenali Ramakrishna", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h5 {
+  margin: 0;
+}
+
+.head-title {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+.head-subtitle {
+  display: flex;
+  justify-content: center;
+  font-size: 2.2rem;
+  margin-top: 2rem;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-top: 2rem;
+}
+.container-fluid .navbar-home > span,
+.container-fluid .navbar-toggler > span {
+  color: #c4c4c4;
+  border: none;
+  font-size: 2rem;
+}
+
+.navbar-home > span:hover {
+  color: var(--main);
+  cursor: pointer;
+}
+.navbar-toggler > span:hover {
+  color: var(--main);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px) {
+  .head-title {
+    font-size: 5rem;
+  }
+}
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+  .head-title {
+    font-size: 6rem;
+  }
+}
